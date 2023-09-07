@@ -1,0 +1,9 @@
+.running{
+    margin-left:115px;
+    padding:20px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.projectBoxes{
+    display:flex;
+}

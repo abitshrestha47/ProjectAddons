@@ -1,0 +1,47 @@
+.box{
+    background:#e0ebf2;
+    height:25vh;
+    width: 15vw;
+    margin-left:2rem;
+    border-radius:10px;
+    text-align:center;
+    padding:25px 10px;
+    margin-bottom: 20px;
+}
+.projectBoxes{
+    display:flex;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+    margin-left:7vw;
+    margin-top:5vh;
+}
+.box h2{
+    font-size:18px;
+    color:rgb(52, 49, 49);
+    text-transform:capitalize;
+}
+.box p{
+    font-size:14px;
+}
+.box .date{
+    font-size:15px;
+    font-weight: 600;
+}
+.box .time{
+    font-size:14px;
+    display:inline-block;
+    margin:4px 0 0 0;
+}
+.box .fontAwesome{
+    border-radius: 15px;
+    font-size:20px;
+    height:22px;
+    width:22px;
+    margin:0 auto;
+    padding:20px;
+    display:flex;justify-content: center;
+    align-items: center;
+}
+.remainingtime{
+    margin-top:5px;
+}
