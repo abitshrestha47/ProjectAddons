@@ -14,7 +14,7 @@ const NotStarted = () => {
   const [color, setColor] = useState({});
   const getContents = async () => {
     try {
-      const response = await axios.get("http://localhost:4747/getProject/0");
+      const response = await axios.get("http://localhost:4747/getnotstarted/0");
       const dataFetch = response.data;
       setData(dataFetch);
     } catch (e) {

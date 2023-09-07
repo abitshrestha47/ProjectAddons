@@ -1,6 +1,6 @@
 const express=require('express');
 const deleteprojectRouter=express.Router();
-const Project=require('../models/Project');
+const Project=require('../models/project');
 const mongoose=require('mongoose');
 
 deleteprojectRouter.delete('/:id',async(req,res)=>{

@@ -1,11 +1,12 @@
 const express=require('express');
 const app=express();
 const cors=require('cors');
-const postprojectRouter=require('./routes/postproject');
+const postprojectRouter=require('./routes/postProject');
 const getProjectRouter=require('./routes/getprojects');
 const editprojectRouter=require('./routes/editproject');
 const deleteprojectRouter=require('./routes/deleteproject');
 const filterprojects=require('./routes/filterprojects');
+const updatestatusRouter=require('./routes/updatestatus');
 require('dotenv').config();
 require('./dbconfig');
 
@@ -18,7 +19,8 @@ app.use('/getProject',getProjectRouter);
 app.use('/getprojectdata',editprojectRouter);
 app.use('/editproject',editprojectRouter);
 app.use('/deleteproject',deleteprojectRouter);
-app.use('/getProject',filterprojects);
+app.use('/getnotstarted',filterprojects);
+app.use('/updateStatus',updatestatusRouter);
 
 
 app.get('/',(req,res)=>{

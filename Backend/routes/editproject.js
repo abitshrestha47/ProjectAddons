@@ -1,6 +1,6 @@
 const express=require('express');
 const editprojectRouter=express.Router();
-const Project=require('../models/Project');
+const Project=require('../models/project');
 const mongoose=require('mongoose');
 // const {ObjectId}=require('bson');
 

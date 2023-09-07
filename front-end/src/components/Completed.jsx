@@ -13,7 +13,7 @@ const Completed=()=>{
 
     const getContents=async ()=>{
         try{
-            const response=await axios.get(`http://localhost:4747/getProject/2`);
+            const response=await axios.get(`http://localhost:4747/getnotstarted/2`);
             setData(response.data);
         }catch(err){
             console.error(err);

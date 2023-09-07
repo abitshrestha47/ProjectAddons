@@ -1,6 +1,6 @@
 const express=require('express');
 const postprojectRouter=express.Router();
-const Project=require('../models/Project');
+const Project=require('../models/project');
 
 postprojectRouter.post('/',async (req,res)=>{
     const {projectname,duedate}=req.body;

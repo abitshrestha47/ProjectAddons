@@ -1,6 +1,6 @@
 const express=require('express');
 const getProjectRouter=express.Router();
-const Project=require('../models/Project');
+const Project=require('../models/project');
 
 getProjectRouter.get('/',async(req,res)=>{
     try{
